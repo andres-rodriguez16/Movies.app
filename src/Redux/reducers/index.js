@@ -4,7 +4,7 @@ import {
   ADD_MOVIE_FAVORITE,
   REMOVE_MOVIE_FAVORITE,
   CLEAR_DETAIL,
-} from "../actions";
+} from "../actions/index";
 
 const initialState = {
   moviesFavourites: [],
@@ -28,9 +28,8 @@ function rootReducer(state = initialState, action) {
     case REMOVE_MOVIE_FAVORITE:
       return {
         ...state,
-        moviesFavourites: state.moviesFavourites.filter(
-          (movie) => movie.id !== action.payload
-        ),
+        moviesFavourites: state.moviesFavourites
+          .filter((movie) => movie.id !== action.payload),
       };
     case GET_MOVIE_DETAIL:
       return {

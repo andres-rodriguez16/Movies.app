@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux"; 
 import { Link } from 'react-router-dom';
 import './Favorites.css';
-import { removeMovieFavorite } from "../../actions";
+import { removeMovieFavorite } from "../../Redux/actions";
 
 export class ConnectedList extends Component {
 

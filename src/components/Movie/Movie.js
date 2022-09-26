@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { getMovieDetail, clearDetail } from '../../actions/index';
+import { getMovieDetail, clearDetail } from '../../Redux/actions/index';
 
 import './Movie.css';
 
